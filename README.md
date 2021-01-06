@@ -1,5 +1,11 @@
 # control ws281x-LEDs with node.js
 
+**NOTE: This is a fork from  [node-rpi-ws281x-native](https://github.com/beyondscreen/node-rpi-ws281x-native) 1.x branch**
+I only made it to work with latest NODE 14.x, it includes latest rpi_ws281x native library. 
+(I don't know how to link it so it's always latest on `npm install`).
+Readme is a copy of what it is in original repo, and all credits goes there too. 
+I onle made it so I can easily install it to my projects.
+
 **NOTE: This will only ever work on the Raspberry Pi.**
 
 This module provides native bindings to the
@@ -12,7 +18,7 @@ from a raspberry-pi. Supported are all LEDs of the NEOPIXEL/WS281x-family
 
 this module is available via npm:
 
-    npm install rpi-ws281x-native
+    npm install @gbkwiatt/node-rpi-ws281x-native
 
 if you prefer installing from source:
 
