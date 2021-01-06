@@ -23,7 +23,7 @@ this module is available via npm:
 if you prefer installing from source:
 
     npm install -g node-gyp
-    git clone --recursive https://github.com/beyondscreen/node-rpi-ws281x-native.git
+    git clone --recursive https://github.com/gbkwiatt/node-rpi-ws281x-native
     cd rpi-ws281x-native
     npm install
 
@@ -45,7 +45,7 @@ It will initialize the driver for 100 LEDs and set all LEDs to the
 same, pinkish color:
 
 ```javascript
-const ws281x = require('rpi-ws281x-native');
+const ws281x = require('@gbkwiatt/node-rpi-ws281x-native');
 
 const channel = ws281x(100, { stripType: 'ws2812' });
 
@@ -68,7 +68,7 @@ way for initialization using the top-level export function.
 #### Example:
 
 ```javascript
-const ws2821x = require('rpi-ws281x-native');
+const ws2821x = require('@gbkwiatt/node-rpi-ws281x-native');
 const options = {
   dma: 10,
   freq: 800000,
@@ -101,7 +101,7 @@ Configures and initializes the drivers and returns an array of channel-interface
 #### Example:
 
 ```javascript
-const ws2821x = require('rpi-ws281x-native');
+const ws2821x = require('@gbkwiatt/node-rpi-ws281x-native');
 
 const channels = ws281x.init({
   dma: 10,
@@ -136,7 +136,7 @@ Send the current state of the channel color-buffers to the LEDs.
 #### Example:
 
 ```javascript
-const ws2821x = require('rpi-ws281x-native');
+const ws2821x = require('@gbkwiatt/node-rpi-ws281x-native');
 
 // initialize
 const [channel] = ws281x.init(options);
