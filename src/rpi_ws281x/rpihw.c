@@ -108,18 +108,56 @@ static const rpi_hw_t rpi_hw_info[] = {
         .desc = "Pi 4 Model B - 4GB v1.2"
     },
     {
-        .hwver = 0xD03114,
-        .type = RPI_HWVER_TYPE_PI4,
-        .periph_base = PERIPH_BASE_RPI4,
-        .videocore_base = VIDEOCORE_BASE_RPI2,
-        .desc = "Pi 4 Model B - 8GB v1.2"
-    },
-    {
         .hwver = 0xb03114,
         .type = RPI_HWVER_TYPE_PI4,
         .periph_base = PERIPH_BASE_RPI4,
         .videocore_base = VIDEOCORE_BASE_RPI2,
         .desc = "Pi 4 Model B - 2GB v1.4"
+    },
+    {
+        .hwver = 0xD03114,
+        .type = RPI_HWVER_TYPE_PI4,
+        .periph_base = PERIPH_BASE_RPI4,
+        .videocore_base = VIDEOCORE_BASE_RPI2,
+        .desc = "Pi 4 Model B - 8GB v1.4"
+    },
+    {
+        .hwver = 0xc03114,
+        .type = RPI_HWVER_TYPE_PI4,
+        .periph_base = PERIPH_BASE_RPI4,
+        .videocore_base = VIDEOCORE_BASE_RPI2,
+        .desc = "Pi 4 Model B - 4GB v1.4"
+    },
+    //	
+    // Compute Module 4
+    //
+    {
+        .hwver = 0xa03140,
+        .type = RPI_HWVER_TYPE_PI4,
+        .periph_base = PERIPH_BASE_RPI4,
+        .videocore_base = VIDEOCORE_BASE_RPI2,
+        .desc = "Compute Module 4 v1.0 eMMC"
+    },
+    {
+        .hwver = 0xb03140,
+        .type = RPI_HWVER_TYPE_PI4,
+        .periph_base = PERIPH_BASE_RPI4,
+        .videocore_base = VIDEOCORE_BASE_RPI2,
+        .desc = "Compute Module 4 v1.0 Lite"
+    },
+    {
+        .hwver = 0xc03140,
+        .type = RPI_HWVER_TYPE_PI4,
+        .periph_base = PERIPH_BASE_RPI4,
+        .videocore_base = VIDEOCORE_BASE_RPI2,
+        .desc = "Compute Module 4 v1.0 WiFi"
+    },
+    {
+        .hwver = 0xd03140,
+        .type = RPI_HWVER_TYPE_PI4,
+        .periph_base = PERIPH_BASE_RPI4,
+        .videocore_base = VIDEOCORE_BASE_RPI2,
+        .desc = "Compute Module 4 v1.0 WiFi 8GB"
     },
     //
     // Model B Rev 1.0
@@ -294,6 +332,17 @@ static const rpi_hw_t rpi_hw_info[] = {
         .periph_base = PERIPH_BASE_RPI,
         .videocore_base = VIDEOCORE_BASE_RPI,
         .desc = "Pi Zero W v1.1",
+    },
+
+    // 
+    // Model Zero 2 W
+    // 
+    {
+        .hwver  = 0x902120,
+        .type = RPI_HWVER_TYPE_PI2,
+        .periph_base = PERIPH_BASE_RPI2,
+        .videocore_base = VIDEOCORE_BASE_RPI2,
+        .desc = "Pi Zero 2 W v1.0",
     },
 
     //
